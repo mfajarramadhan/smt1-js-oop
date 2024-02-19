@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart</title>
+</head>
+<body>
+    <script>
+        function Aritmatika(){
+        var a = prompt("Masukkan Nilai a");
+        var b = prompt("Masukkan Nilai b");
+        var nilaia = parseInt(a);
+        var nilaib = parseInt(b);
+        var operator = prompt("Masukkan Operator (+,-,x,/)");
+        if(operator == "+"){
+            var hasil = nilaia + nilaib;
+        }
+        else if(operator == "-"){
+            var hasil = nilaia - nilaib;
+        }
+        else if(operator == "x"){
+            var hasil = nilaia * nilaib;
+        }
+        else if(operator == "/"){
+            var hasil = nilaia / nilaib;
+        }
+        else{
+            document.write("Nilai Tidak Ditemukan!")
+        }
+        document.write("Hasil dari "+ nilaia + operator + nilaib + " adalah = " + hasil);
+        document.write('<div id=print></div><br> <button onclick=print(print)>Print</button>')
+    }
+    </script>
+    <p>Klik untuk menampilkan Aritmatika</p>
+    <input type="button" onclick="Aritmatika()" value="klik">
+</body>
+</html>

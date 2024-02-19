@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Properti Prototype</title>
+    <script>
+        function book(title, author) {
+            this.title = title;
+            this.author = author;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var myBook = new book(`Pemrograman JS`, `Muhammad Fajar`);
+        book.prototype.price = null;
+        myBook.price = 200000;
+        document.write(`Judul buku = ${myBook.title} <br>`);
+        document.write(`Nama pengarang = ${myBook.author} <br>`);
+        document.write(`Harga buku = ${myBook.price} <br>`);
+    </script>
+</body>
+
+</html>

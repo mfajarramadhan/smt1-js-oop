@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Program Canvas</title>
+</head>
+<body>
+  <!-- Tampilkan canvas dengan lebar dan tinggi 200 pixel -->
+  <canvas id="myCanvas" width="200" height="200"></canvas>
+
+  <!-- Script untuk menggambar di canvas -->
+  <script>
+    // Ambil elemen canvas
+    const canvas = document.getElementById('myCanvas');
+
+    // Dapatkan context 2D dari canvas
+    const ctx = canvas.getContext('2d');
+
+    // Buat gradien warna untuk lingkaran
+    const gradient = ctx.createRadialGradient(100, 100, 0, 100, 100, 100);
+    gradient.addColorStop(0, 'blue');
+    gradient.addColorStop(1, 'green');
+
+    // Buat lingkaran di tengah canvas
+    ctx.beginPath();
+    ctx.arc(100, 100, 100, 0, 2 * Math.PI);
+    ctx.fillStyle = gradient; // Gunakan gradien warna yang sudah dibuat
+    ctx.fill();
+  </script>
+</body>
+</html>

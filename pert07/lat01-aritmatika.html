@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmatika</title>
+    <script>
+        function Aritmatika() {
+            var a = prompt("Masukan nilai ke 1");
+            var b = prompt("Masukan nilai ke 2");
+
+            //Aritmatika
+            var nilai1 = parseInt(a);
+            var nilai2 = parseInt(b);
+            var hasil = nilai1 + nilai2;
+            var hasil2 = nilai1 - nilai2;
+            var hasil3 = nilai1 * nilai2;
+            var hasil4 = nilai1 / nilai2;
+
+            document.write("Hasil dari penjumlahan " + a + " + " + b + " adalah : " + hasil + "<br>")
+            document.write("Hasil dari pengurangan " + a + " - " + b + " adalah : " + hasil2 + "<br>")
+            document.write("Hasil dari perkalian " + a + " x " + b + " adalah : " + hasil3 + "<br>")
+            document.write("Hasil dari pembagian " + a + " : " + b + " adalah : " + hasil4 + "<br>")
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Menampilkan Aritmatika</h2>
+    <br>
+    <p>Klik untuk menampilkan Aritmatika</p>
+    <input type="button" onclick="Aritmatika()" value="Klik disini">
+
+
+
+</body>
+
+</html>

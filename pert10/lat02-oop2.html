@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Dalam JS</title>
+    <script>
+        function book(title, author, cost, category) {
+            this.title = title
+            this.author = author
+            this.cost = cost
+            this.category = category
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var newBook = new book("MTK", "Fajar", 50000, "Buku Favorit");
+        document.write("Judul Buku = " + newBook.title + "<br>");
+        document.write("Pengarang Buku = " + newBook.author + "<br>");
+        document.write("Harga Buku = " + newBook.cost + "<br>");
+        document.write("Kategori Buku = " + newBook.category + "<br>");
+    </script>
+</body>
+
+</html>

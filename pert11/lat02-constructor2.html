@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+</head>
+
+<body>
+
+    <p id="deme"></p>
+    <p id="demo"></p>
+    <p id="demi"></p>
+    <p id="dema"></p>
+
+    <script>
+        class Aritmatik {
+            constructor(bil1, bil2) {
+                this.bil1 = bil1;
+                this.bil2 = bil2;
+            }
+            penjumlahan() {
+                return this.bil1 + this.bil2;
+            }
+            pengurangan() {
+                return this.bil1 - this.bil2;
+            }
+            perkalian() {
+                return this.bil1 * this.bil2;
+            }
+            pembagian() {
+                return this.bil1 / this.bil2;
+            }
+        }
+        let myHasil = new Aritmatik(10, 5);
+        document.getElementById("deme").innerHTML = "Hasilnya penjumlahan adalah " + myHasil.penjumlahan();
+        document.getElementById("demo").innerHTML = "Hasilnya pengurangan adalah " + myHasil.pengurangan();
+        document.getElementById("demi").innerHTML = "Hasilnya perkalian adalah " + myHasil.perkalian();
+        document.getElementById("dema").innerHTML = "Hasilnya pembagian adalah " + myHasil.pembagian();
+
+    </script>
+</body>
+
+</html>

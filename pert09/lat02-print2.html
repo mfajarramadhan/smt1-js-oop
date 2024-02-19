@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencetak Sebagian Dokumen</title>
+    <script>
+        function printContent(el){
+            var restorepage = document.body.innerHTML;
+            var printcontent = document.getElementById(el).innerHTML;
+            document.body.innerHTML = printcontent;
+            window.print();
+            document.body.innerHTML = restorepage;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tutorial web</h1>
+
+    <div id="div1">Tutorial Pemrograman JavaScript</div>
+    <button onclick="printContent('div1')">Print</button>
+    
+    <div id="div2">Tutorial Javascript</div>
+    <button onclick="printContent('div2')">Print</button>
+
+    <p id="p1">Developh Website</p>
+    <button onclick="printContent('p1')">Print</button>
+    
+
+    <div id="img">
+    <img src="https://scontent.fcgk6-2.fna.fbcdn.net/v/t39.30808-6/301784303_441588074690815_2859339521437281715_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFVI08W02uI84ns7_OUfsNkMB0aVz8ElGcwHRpXPwSUZ3SeCXpm-jjd9Z2nPTojsrhTYQMjr2oHLqUU11pERjeY&_nc_ohc=flZMz9d3IA0AX9YSTli&_nc_ht=scontent.fcgk6-2.fna&oh=00_AfC9XCTmpTskyP01T3OgUnh6O-d7UmqwQo4lkmhxwqeCIA&oe=6373D24C" 
+    alt="Kucing Kampret">
+    <br>
+    <button onclick="printContent('img')">Print</button>
+</body>
+</html>

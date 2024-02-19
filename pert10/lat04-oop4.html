@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek</title>
+</head>
+
+<body>
+    <script>
+        /*Ini punya teh Yuyun*/
+        class Plus {
+            constructor(bilangan1, bilangan2) {
+                this.bilangan1 = bilangan1
+                this.bilangan2 = bilangan2
+            }
+        }
+
+        const myJum = new Plus(150, 200);
+        document.write("Hasil dari " + myJum.bilangan1 + " + " + myJum.bilangan2 + " adalah = ");
+
+        result = myJum.bilangan1 + myJum.bilangan2
+        document.write(result);        
+    </script>
+
+    <!--Punya Saya
+
+    <script>
+        //this sama fungsinya dengan var
+        class Plus{
+            constructor(bilangan1, bilangan2){
+                this.bilangan1 = bilangan1
+                this.bilangan2 = bilangan2
+                this.hasil = parseInt(bilangan1) + parseInt(bilangan2)
+            
+            }
+        }
+
+        const myJum = new Plus(150, 200);
+        document.write("Hasil dari " + myJum.bilangan1 + " + " + myJum.bilangan2 + " adalah = " + myJum.hasil );
+    </script>
+-->
+</body>
+
+</html>

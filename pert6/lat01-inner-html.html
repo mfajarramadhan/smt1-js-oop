@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+   <h2>Nested Functions</h2>
+
+   <p>Perkalian</p>
+   <p id="Perkalian"></p>
+
+   <p>Penjumlahan</p>
+   <p id="Penjumlahan"></p>
+
+   <p>Pengurangan 1 Angka </p>
+   <p id="Pengurangan"></p>
+
+   <script>
+      Perkalian();
+      function Perkalian() {
+
+         var hasil = ""
+         for (let a = 2; a < 10; a++)
+            hasil += "Hasil = " + a * a + "<br>";
+         document.getElementById("Perkalian").innerHTML = hasil;
+      }
+
+      Penjumlahan();
+      function Penjumlahan() {
+
+         var hasil2 = ""
+         for (let b = 1; b < 10; b++)
+            hasil2 += "Hasil = " + b + b + "<br>";
+         document.getElementById("Penjumlahan").innerHTML = hasil2;
+      }
+
+      Pengurangan();
+      function Pengurangan() {
+         var hasil3 = ""
+         for (let c = 10; c >= 0; c--) {
+            document.write(c + "<br>")
+         }
+         document.getElementById("Pengurangan").innerHTML = hasil3;
+      }
+
+   </script>
+</body>
+
+</html>

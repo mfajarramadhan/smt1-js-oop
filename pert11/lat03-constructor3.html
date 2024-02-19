@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <script>
+        class Aritmatik {
+            constructor(bil1, bil2) {
+                this.bil1 = bil1;
+                this.bil2 = bil2;
+            }
+            penjumlahan() {
+                return this.bil1 + this.bil2;
+            }
+            /*if(hasil > 90)
+            {
+                document.write("A");
+            }
+            else
+            {
+                document.write("B");
+            }*/
+
+        }
+        let myHasil = new Aritmatik(10, 5);
+        document.getElementById("demo").innerHTML = "Hasilnya = " + myHasil.penjumlahan();
+
+        if (myHasil.penjumlahan() > 90) {
+            document.write("NIlai Anda A");
+        }
+        else {
+            document.write("Nilai Anda B");
+        }
+    </script>
+</body>
+
+</html>

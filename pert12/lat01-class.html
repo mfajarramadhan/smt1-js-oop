@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class mahasiswa {
+            constructor() {
+                var nama;
+                var npm;
+                var kelas;
+                var prodi;
+            }
+            get_nama() {
+                return this.nama;
+            }
+            set_nama(nama) {
+                this.nama = nama;
+            }
+            get_npm() {
+                return this.npm;
+            }
+            set_npm(npm) {
+                this.npm = npm;
+            }
+            get_kelas() {
+                return this.kelas;
+            }
+            set_kelas(kelas) {
+                this.kelas = kelas;
+            }
+            get_prodi() {
+                return this.prodi;
+            }
+            set_prodi(prodi) {
+                this.prodi = prodi;
+            }
+        }
+        var mhs = new mahasiswa();
+        mhs.set_nama("Eni Sulastri");
+        mhs.set_npm(4337857201220003);
+        mhs.set_kelas("Kelas Malam");
+        mhs.set_prodi("Sistem Informasi");
+        document.writeln(mhs.get_nama() + "<br>" + mhs.get_npm() + "<br>" +
+            mhs.get_kelas() + "<br>" + mhs.get_prodi());
+    </script>
+</body>
+
+</html>

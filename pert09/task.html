@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Modul 9</title>
+    <script>
+        function cetakhalaman(print) {
+            var restorepage = document.body.innerHTML;
+            var printhalaman = document.getElementById(print).innerHTML;
+            document.body.innerHTML = printhalaman;
+            window.print();
+            document.body.innerHTML = restorepage;
+        }
+    </script>
+</head>
+
+<body>
+    <h2 align="center"><b>Tugas Modul 9</b></h1>
+        <div id="img">
+            <center>
+                <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg"
+                    alt="Kucing Gaul" border="1" width="250px" height="250px">
+            </center>
+        </div>
+        <br>
+        <center>
+            <button onclick="cetakhalaman('img')">Print</button>
+        </center>
+        <br>
+        <hr>
+        <br>
+
+        <div id="tabel">
+            <table border="1" cellpadding="15px" cellspacing="0">
+                <tr>
+                    <th>Daftar Menu</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>Nasi Goreng Sosis</td>
+                    <td align="center">1</td>
+                    <td align="center">12.000</td>
+                </tr>
+                <tr>
+                    <td>Nasi Goreng Sosis + Baso</td>
+                    <td align="center">2</td>
+                    <td align="center">15.000</td>
+                </tr>
+                <tr>
+                    <td>Nasi Goreng Special </td>
+                    <td align="center">1</td>
+                    <td align="center">18.000</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total Harga :</th>
+                    <th>60.000</th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button onclick="cetakhalaman('tabel')">Print</button>
+        <br>
+        <hr>
+
+        <div id="teks">
+            <p>Ini adalah teks paragraf yang akan di Print dengan JavaScript</p>
+        </div>
+        <button onclick="cetakhalaman('teks')">Print</button>
+</body>
+
+</html>

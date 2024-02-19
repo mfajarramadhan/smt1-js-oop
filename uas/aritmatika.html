@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class dan Function</title>
+</head>
+<body>
+    <h2>Aritmatika antara angka 10 dan 5</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+
+        <script>
+            class Aritmatik
+            {
+                    constructor(bil1, bil2)
+                {
+                    this.bil1 = bil1;
+                    this.bil2 = bil2;
+                }
+                penjumlahan()
+                {
+                    return this.bil1 + this.bil2;
+                }
+                pengurangan()
+                {
+                    return this.bil1 - this.bil2;
+                }
+                perkalian()
+                {
+                    return this.bil1 * this.bil2;
+                }
+                pembagian()
+                {
+                    return this.bil1 / this.bil2;
+                }
+            }
+                let myHasil = new Aritmatik(10, 5);
+                document.getElementById("p1").innerHTML="Hasilnya penjumlahan adalah " +
+                myHasil.penjumlahan();
+                document.getElementById("p2").innerHTML="Hasilnya pengurangan adalah " +
+                myHasil.pengurangan();
+                document.getElementById("p3").innerHTML="Hasilnya perkalian adalah " +
+                myHasil.perkalian();
+                document.getElementById("p4").innerHTML="Hasilnya pembagian adalah " +
+                myHasil.pembagian();
+        </script>
+</body>
+</html>

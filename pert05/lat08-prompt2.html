@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hitung() {
+            var x = prompt("Masukan nilai ke 1");
+            var y = prompt("Masukan nilai ke 2");
+
+            //Mengubah String menjadi Integer
+            var nilai1 = parseInt(x);
+            var nilai2 = parseInt(y);
+            var hasil = nilai1 + nilai2;
+
+            document.write("Hasil dari penjumlahan adalah : " + hasil)
+        }
+    </script>
+</head>
+
+<body>
+    <p>Klik untuk penjumlahan</p>
+    <input type="button" onclick="hitung()" value="Klik">
+</body>
+
+</html>

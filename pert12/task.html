@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Aritmatika {
+            constructor() {
+                var penjumlahan;
+            }
+            get_penjumlahan() {
+                return this.penjumlahan;
+            }
+            set_penjumlahan(penjumlahan) {
+                this.penjumlahan = penjumlahan;
+            }
+            get_pengurangan() {
+                return this.pengurangan;
+            }
+            set_pengurangan(pengurangan) {
+                this.pengurangan = pengurangan;
+            }
+            get_perkalian() {
+                return this.perkalian;
+            }
+            set_perkalian(perkalian) {
+                this.perkalian = perkalian;
+            }
+            get_pembagian() {
+                return this.pembagian;
+            }
+            set_pembagian(pembagian) {
+                this.pembagian = pembagian;
+            }
+        }
+        var mhs = new Aritmatika();
+        mhs.set_penjumlahan(200 + 500);
+        mhs.set_pengurangan(500 - 20);
+        mhs.set_perkalian(10 * 50);
+        mhs.set_pembagian(500 / 10);
+        document.writeln(mhs.get_penjumlahan() + "<br>" + mhs.get_pengurangan() + "<br>" + mhs.get_perkalian() + "<br>" + mhs.get_pembagian());
+    </script>
+</body>
+
+</html>

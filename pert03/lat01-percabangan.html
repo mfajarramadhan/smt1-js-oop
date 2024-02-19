@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan</title>
+</head>
+<body>
+    <script>
+        var nilai = 45;
+        var kehadiran = 80;
+        var linebreak = "</br>"
+        
+        if(nilai == 75){
+            if(kehadiran == 100){
+            document.write("Anda Lulus");
+            }else{
+            document.write("Anda Lulus Bersyarat");
+            }
+            document.write("Anda Mendapat Nilai A");
+            }
+
+            else if(nilai == 60){
+                document.write("Anda mendapatkan nilai B");
+            }
+            else if(nilai <= 50){
+                if(kehadiran >= 80)
+                document.write("Anda Lulus Karena Rajin");
+            }
+            else{
+                document.write("Anda Tidak Lulus");
+            }
+    </script>
+</body>
+</html>
+
