@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Tanpa return, nilai hasil penjumlahan tidak dapat disimpan kedalam variable
+        function jumlah(a, b) {
+            const total = a + b;
+            console.log(total);;
+        }
+
+        // Return, mengembalikan nilai dari function dan menyimpannya di dalam variable
+        function jumlahkan(a = 5, b = 5) {
+            const total = a + b;
+            return total;
+        }
+        const hasil = jumlahkan();
+    </script>
+</body>
+
+</html>

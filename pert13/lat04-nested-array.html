@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Array</title>
+</head>
+
+<body>
+    <script>
+        const studentRow = [
+            ['Hanif', 'Diva', 'Fajar'],
+            ['Ayu', 'Sarah', 'Lulu'],
+            ['Maul', 'Intan W', 'Intan A'],
+        ];
+
+        for (let i = 0; i < studentRow.length; i++) {
+            const row = studentRow[i];
+            console.log(`Seat Row #${i + 1}`);
+            for (let j = 0; j < row.length; j++) {
+                console.log(` ${row[j]}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
